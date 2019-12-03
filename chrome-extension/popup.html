@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            width: 300px;
+        }
+        button {
+            height: 25px;
+            width: 150px;
+            outline: none;
+            margin-top: 5px;
+        }
+        input {
+            height: 25px;
+            width: 100%;
+        }
+        p {
+            cursor: pointer;
+            text-decoration: underline
+        }
+    </style>
+    <title>Url shortener</title>
+</head>
+<body>
+    <div>
+        <label for="original-url">Put url to short it:</label>
+        <input type="text" id="original-url">
+    </div>
+
+    <div>
+        <button id="short-the-url">Short the link</button>
+        <button id="short-curr-tab">Short active tab link</button>
+        <button id="clear-url">Clear</button>
+        <button id="copy-url">Copy link</button>
+    </div>
+
+    <div>
+        <p id="result-url"></p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
